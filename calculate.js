@@ -1,4 +1,4 @@
-const userInput = ['12', '-', '2', '*', '2'];
+const userInput = ['12', '-', '2', '*', '2', '-', '4'];
 console.log(userInput);
 
 function calculate(userInput){
@@ -46,7 +46,7 @@ function calculate(userInput){
         }
         toNewUserInput.push(solution);
         if (splitList3.length !== 0){
-            toNewUserInput.concat(splitList3);
+            toNewUserInput = toNewUserInput.concat(splitList3);
         }
         new_userInput = toNewUserInput;
     }
